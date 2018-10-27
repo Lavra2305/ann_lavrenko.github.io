@@ -1,0 +1,262 @@
+body {
+    margin: 0px;
+    font-family: Lato;
+}
+* {
+	box-sizing: border-box;
+}
+.head-info {
+    position: relative;
+}
+.head-info .fl-left {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+.head-info .fl-right {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+.head-name {
+    font-family: Catamaran;
+    padding: 20px;
+    font-size: 2rem;
+}
+.container {
+    position: relative;
+}
+header.mainhead {
+    position: relative;
+    overflow: hidden;
+    /* padding-top: calc(7rem + 72px);
+    padding-bottom: 7rem; */
+    /* background: linear-gradient(0deg,#ff6a00 0,#ee0979 100%); */
+    background: linear-gradient(0deg,#5c75d8 0,#192966 100%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.text-white {
+    color: #fff!important;
+}
+.text-center {
+    text-align: center!important;
+}
+header.mainhead .mainhead-content {
+    z-index: 1;
+    position: relative;
+}
+header.mainhead .mainhead-content .mainhead-heading {
+    font-size: 4rem;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.mb-0, .my-0 {
+    margin-bottom: 0!important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Catamaran;
+    font-weight: 800!important;
+}
+.btn-primary {
+    background-color: #ee0979;
+    border-color: #ee0979;
+}
+.rounded-pill {
+    border-radius: 5rem;
+}
+.btn-xl {
+    color: white;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+header.mainhead .bg-circle-1 {
+    height: 80rem;
+    width: 80rem;
+    bottom: -55rem;
+    left: -55rem;
+}
+header.mainhead .bg-circle {
+    z-index: 0;
+    position: absolute;
+    border-radius: 100%;
+    /* background: linear-gradient(0deg,#ee0979 0,#ff6a00 100%); */
+    background: linear-gradient(0deg,#192966 0,#5c75d8 100%);
+}
+header.mainhead .bg-circle-2 {
+    height: 40rem;
+    width: 40rem;
+    top: -2rem;
+    right: -20rem;
+}
+header.mainhead .bg-circle-3 {
+    height: 10rem;
+    width: 10rem;
+    bottom: -2rem;
+    right: 35%;
+}
+header.mainhead .bg-circle-4 {
+    height: 30rem;
+    width: 30rem;
+    top: -5rem;
+    right: 45%;
+}
+.bg-blue {
+    background: linear-gradient(0deg,#5c75d8 0, #192966 100%);
+}
+.cardbody {
+	background-color: #FFFFFF;
+	width: 70%;
+	margin: 30px auto;
+	padding: 25px 0;
+	border-radius: 5px;
+	box-shadow: 0 0 30px -5px;
+}
+.card {
+	width: 60%;
+	height: 100%;
+	margin:0;
+	border-right: solid 1px lightgray; 
+	display: inline-block;
+	float: left;
+}
+.logo {
+	display: block;
+	width: 200px;
+	margin: 0 25px;
+	float: left;
+}
+.logo img {
+	width: 100%;
+	display: block;
+}
+.about {
+	margin: 0 25px;
+}
+.about p {
+	margin: 0;
+}
+.about h1 {
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 1;
+    margin-top: 5%;
+	padding-bottom: 10px;
+}
+.about a {
+	text-decoration: none;
+  	text-align: center;
+  	line-height: 1;
+  	display: inline-block;
+	background-color: #0177B5; 
+	color: white;
+	width: 35%;
+	padding: 10px 15px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right:auto;
+	border-radius: 5px;
+}
+.info {
+	width: 40%;
+	height: 100%;
+	padding: 2%;
+	display: inline-block;
+	float: right;
+}
+.info h2 {
+	font-weight: 300;
+	font-size: 20px;
+	margin: 0;
+	padding: 5px 10px;
+}
+.info table {
+	border-spacing: 0;
+}
+.info td {
+	padding: 5px 10px;
+	font-size: 14px;
+}
+.info td:first-child {
+	font-weight: 600;
+}
+.info i {
+	color: #137AB3;
+	padding-left: 10px;
+	padding-right: 15px;
+	padding-top: 15px;
+}
+.info .icons {
+    margin-left: 25%;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.foot-info {
+    padding: 10px 0;
+    font-weight: 1000;
+}
+@media (min-width: 640px) and (max-width: 1024px) {
+	.cardbody {
+		width: 80%;
+		margin: 25px auto; 
+	}
+	.card, .info {
+		width: 50%
+	}
+	.info {
+		margin: 9% 0;
+	}
+	.logo {
+    width: 50%;
+    margin: auto;
+  	float: none;
+	}
+	.about h1, p {
+		padding: 10px 0;
+		text-align: center;
+	}
+	.about a {
+		width: 100%
+	}
+}
+@media (max-width: 640px) {
+	.card, .logo, .info {
+		float: none;
+		border-right: none;
+	}
+	.card, .info, .about a {
+		width: 100%;
+	}
+	.cardbody {
+		width: 95%;
+		margin: 10px auto; 
+	}
+	.logo {
+		margin: auto;
+	}
+	.about h1, p {
+		padding: 10px 0;
+		text-align: center;
+	}
+}
+@media (min-width: 992px) {
+    header.mainhead {
+        padding-top: calc(10rem + 55px);
+        padding-bottom: 10rem;
+    }
+    header.mainhead .mainhead-content .mainhead-heading {
+        font-size: 6rem;
+    }
+    header.mainhead .mainhead-content .mainhead-subheading {
+        font-size: 4rem; 
+    }
+}
