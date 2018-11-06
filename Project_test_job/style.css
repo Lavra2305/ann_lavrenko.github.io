@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+    margin: 0;
+}
+.container {
+    width: 600px;
+    padding: 10px 20px;
+    margin: auto;
+    position: relative;
+}
+.container.p-0 {
+    padding: 0 20px;
+}
+.border {
+    border: 1px solid black;
+    font-size: 1.5rem;
+}
+.winner {
+    position: relative;
+    padding: 8px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.winner .button {
+    position: absolute;
+    top: 2.5px;
+    right: 2px;
+    padding: 5px 20px;
+}
+.text-center {
+    text-align: center;
+}
+.reg_form {
+    position: relative;
+}
+.reg_form button {
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.list {
+    list-style: none;
+    margin-right: 40px;
+}
+.row {
+    position: relative;
+    margin-bottom: 20px;
+}
+input::placeholder {
+    font-size: 0.8rem;
+}
+li .input {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+li .title {
+    width: 40%;
+}
+th {
+    padding: 5px 30px;
+}
+.table_row {
+    font-size: 0;
+}
+.table_row.size {
+    width: 600px;
+}
+.block {
+    overflow-y: auto;
+}
+.block.size {
+    width: 600px;
+}
+.block1 {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.block1.cell {
+    border-top: none;
+}
+.block1.w_20 {
+    width: 20%;
+}
+.block1.w_25 {
+    width: 25%;
+}
+.block1.w_10 {
+    width: 10%;
+}
+.block.show {
+    display: block;
+}
+@media (min-width: 600px) {
+    .container {
+      width: 400px;
+    }
+    .border, .block1 {
+       font-size: 1rem; 
+    }
+    
+  }
+
